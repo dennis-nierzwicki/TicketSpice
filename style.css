@@ -37,8 +37,7 @@ body {
 }
 
 .dl-header-logo {
-    height: 100%;
-    width: 290px;
+    height: 80px;
     margin-top: -15px;
 }
 
@@ -424,8 +423,7 @@ body {
     }
 
     .dl-header-logo {
-        height: 100%;
-        width: 175px;
+        height: 50px;
         margin-top: 20px;
         margin-left: 20px;
     }
