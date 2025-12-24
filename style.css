@@ -1,0 +1,454 @@
+/* DO NOT COPY */
+body {
+    margin: 0;
+}
+
+/* DO NOT COPY */
+
+/* -------------- HEADER -------------- */
+
+.dl-header {
+    position: relative;
+    background-size: initial;
+    background-repeat: repeat;
+    background-image: linear-gradient(180deg, rgba(61, 108, 182, 0.9) 25%, rgba(17, 170, 221, 0.9) 70%), url(img/usa-diamond-plate.png);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dl-header:after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 10px;
+    content: '';
+    background: url(img/stripes.svg) repeat top center;
+}
+
+.dl-header-container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 50px 25px 50px;
+    max-width: 1400px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.dl-header-logo {
+    height: 100%;
+    width: 290px;
+    margin-top: -15px;
+}
+
+
+.dl-header-gold-pill-nav,
+.dl-header-nav {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.dl-header-logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.dl-header-gold-pill {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 1.3em;
+}
+
+.dl-gold-pill-link,
+.dl-header-nav-link {
+    text-decoration: none;
+}
+
+.dl-header-gold-pill-nav {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px 50px 50px 50px;
+    overflow: hidden;
+    height: 48px;
+    max-height: 48px;
+    padding-top: 4px;
+    padding-right: 20px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    box-shadow: 2px 2px 18px 0px rgba(0, 0, 0, 0.68);
+    transition: box-shadow 300ms ease 0ms;
+    background: linear-gradient(to bottom, rgba(255, 188, 20, 1) 0%, rgba(255, 239, 61, 1) 47%, rgba(254, 183, 69, 1) 50%, rgba(255, 208, 1, 1) 88%, rgba(250, 197, 105, 1) 100%);
+}
+
+.dl-gold-pill-link {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    font-family: Bungee;
+    font-size: 17px;
+    color: #001E50;
+    text-shadow: 1px 1px #fff;
+    transition: all .2s ease-in;
+    filter: brightness(1) invert(0) drop-shadow(1px 1px #fff);
+    text-shadow: 1px 1px #fff;
+}
+
+.dl-header-gold-pill-icon {
+    margin-right: 5px;
+    filter: drop-shadow(1px 1px #fff);
+}
+
+.dl-header-gold-pill-list a:hover {
+    filter: brightness(0) invert(1) drop-shadow(1px 1px #000);
+    text-shadow: 1px 1px #fff;
+}
+
+.dl-header-nav-link {
+    color: #fff;
+    text-shadow: 2px 2px 2px #7e6002;
+    font-family: Bungee;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-left: 45px;
+    transition: all .2s ease-in;
+}
+
+.dl-header-nav-link:hover {
+    color: #efba2f;
+}
+
+.dl-header-nav {
+    margin-top: 45px;
+}
+
+#mobile-menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    width: 32px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 20px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #efba2f;
+    transition: 0.3s ease;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 10px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 20px;
+}
+
+/* Off-canvas menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 30%;
+    height: 100vh;
+    background: #0045b5;
+    padding: 80px 30px;
+    transition: right 0.35s ease;
+    z-index: 1000;
+}
+
+.mobile-menu a {
+    display: block;
+    margin-bottom: 24px;
+    font-family: Bungee;
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all .2s ease-in;
+}
+
+.mobile-menu a:hover {
+    color: #efba2f;
+}
+
+#mobile-menu-toggle:checked~.mobile-menu {
+    right: 0;
+}
+
+#mobile-menu-toggle:checked+.hamburger span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+#mobile-menu-toggle:checked+.hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+#mobile-menu-toggle:checked+.hamburger span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+}
+
+/* -------------- HERO -------------- */
+
+.dl-hero-container {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    background-position: left;
+    background-image: url(img/opt-park-overview-image-of-beautiful-day-at-diggerland-usa-header.jpg);
+
+}
+
+.dl-hero-color-container {
+    background-image: linear-gradient(80deg, rgba(255, 0, 0, 0.85) 61%, rgba(255, 0, 0, 0.85) 65%, rgba(255, 0, 0, 0) 65%, rgba(255, 0, 0, 0) 100%);
+    position: relative;
+    min-height: 100%;
+    padding-left: 50px;
+    display: flex;
+    z-index: 3;
+    width: 95%;
+    max-width: 1080px;
+}
+
+.dl-hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+
+.dl-h1 {
+    font-family: 'Bungee', display;
+    color: #fff;
+    font-size: 3rem;
+    line-height: 0.8em;
+    text-align: left;
+    text-shadow: 0.1em 0.1em 0em #000000;
+    margin-bottom: 10px;
+}
+
+.dl-h2 {
+    font-family: 'Bungee', display;
+    font-size: 1.5rem;
+    color: #ffff00;
+    text-align: left;
+    text-shadow: 0.1em 0.1em 0.08em #000000;
+    margin-top: 0px;
+}
+
+/* -------------- TEXT BREAKOUT -------------- */
+
+.dl-text-breakout-container {
+    position: relative;
+    background-size: initial;
+    background-repeat: repeat;
+    background-position: center top;
+    background-image: linear-gradient(180deg, rgba(61, 108, 182, 0.9) 30%, rgba(17, 170, 221, 0.9) 70%), url(img/usa-diamond-plate.png);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.dl-text-breakout-container:before {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 10px;
+    content: '';
+    background: url(https://diggerlandusa.com/wp-content/uploads/stripes.svg) repeat top center !important;
+}
+
+.dl-text-breakout-container:after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 10px;
+    content: '';
+    background: url(https://diggerlandusa.com/wp-content/uploads/stripes.svg) repeat top center !important;
+}
+
+.dl-text-breakout>.dl-h2 {
+    text-align: center;
+}
+
+.dl-text-breakout {
+    width: 95%;
+    max-width: 1200px;
+    padding: 1rem 0 1rem 0;
+    margin: 0 auto;
+}
+
+.dl-text {
+    font-family: 'Nunito', Helvetica, Arial, Lucida, sans-serif;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.dl-link {
+    text-decoration: none;
+    color: #ffff00;
+    font-weight: bold;
+}
+
+/* Tablet Media Query */
+
+@media (max-width: 980px) {
+
+    /* -------------- HEADER -------------- */
+
+    .dl-header-gold-pill {
+        justify-content: center;
+    }
+
+    .dl-header-gold-pill-nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 0px;
+        overflow: hidden;
+        height: 48px;
+        max-height: 48px;
+        padding-top: 4px 20px 4px 20px;
+        margin: 0px;
+        box-shadow: 2px 2px 18px 0px rgba(0, 0, 0, 0.68);
+        transition: box-shadow 300ms ease 0ms;
+        background: linear-gradient(to bottom, rgba(255, 188, 20, 1) 0%, rgba(255, 239, 61, 1) 47%, rgba(254, 183, 69, 1) 50%, rgba(255, 208, 1, 1) 88%, rgba(250, 197, 105, 1) 100%);
+    }
+
+    .dl-header-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 25px 0px;
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .dl-header-logo-nav-container {
+        margin-top: 0px;
+    }
+
+    .dl-header-logo {
+        height: 100%;
+        width: 175px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .dl-header-gold-pill-text {
+        display: none;
+    }
+
+    .dl-header-nav-link {
+        display: none;
+    }
+
+    .dl-header-nav {
+        margin-right: 15px;
+    }
+
+    .dl-header-gold-pill-icon {
+        width: 85%;
+    }
+
+    .dl-gold-pill-link {
+        margin-right: 15px;
+    }
+
+    .dl-header-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* -------------- HERO -------------- */
+
+    .dl-hero-container {
+        background-position: left;
+    }
+
+    .dl-hero-color-container {
+        width: 80%;
+        padding-left: 20px;
+    }
+
+    .dl-hero-text-container {
+        width: 65%;
+        margin-left: 0px;
+    }
+
+    .dl-h1 {
+        font-size: 2.4rem;
+    }
+
+    .dl-h2 {
+        font-size: 1.4rem;
+    }
+
+}
+
+/* Mobile Media Query */
+@media (max-width: 425px) {
+
+    /* -------------- HEADER -------------- */
+
+    .dl-header-logo {
+        width: 125px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    /* Off-canvas menu */
+    .mobile-menu {
+        width: 45%;
+    }
+
+    /* -------------- HERO -------------- */
+
+    .dl-hero-container {
+        background-position: bottom;
+    }
+
+    .dl-hero-color-container {
+        background-image: linear-gradient(90deg, rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 0.85) 0%, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 100%);
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .dl-hero-text-container {
+        width: 100%;
+    }
+
+    .dl-h1,
+    .dl-h2 {
+        text-align: center;
+    }
+}
