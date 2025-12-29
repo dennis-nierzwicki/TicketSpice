@@ -347,12 +347,29 @@ body {
     align-items: flex-start;
 }
 
+.dl-footer-social-list {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-left: -40px;
+    margin-bottom: 0px;
+    gap: 10px;
+}
+
+.dl-footer-social-media-icon {
+    transition: all .2s ease-in;
+}
+
+.dl-footer-social-media-icon:hover {
+    transform: scale(120%);
+}
+
 .dl-footer-link-list {
     width: 25%;
 }
 
 .dl-footer-link-list>.dl-text {
-    margin: 3px 0 0 0;
+    margin: 1px 0 0 0;
     font-weight: bold;
 }
 
