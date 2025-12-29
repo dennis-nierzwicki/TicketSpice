@@ -62,7 +62,8 @@ body {
 }
 
 .dl-gold-pill-link,
-.dl-header-nav-link {
+.dl-header-nav-link,
+.dl-footer-link {
     text-decoration: none;
 }
 
@@ -355,12 +356,29 @@ body {
     font-weight: bold;
 }
 
-.dl-footer-link-list>ul {
+.dl-footer-link {
     list-style-type: none;
     font-family: Nunito;
+    font-weight: bold;
     color: #fff;
     margin-left: -40px;
     font-size: 1rem;
+    transition: all .2s ease-in;
+    margin-bottom: 5px;
+}
+
+.dl-trademark-text {
+    font-family: Nunito;
+    font-weight: bold;
+    color: #fff;
+    font-size: .8rem;
+    margin-bottom: 1px;
+    padding: 0px;
+    width: 70%;
+}
+
+.dl-footer-link:hover {
+    color: #ffff00;
 }
 
 .dl-footer-link-list>li {
