@@ -515,6 +515,33 @@ body {
         font-size: 1.4rem;
     }
 
+    /* -------------- FOOTER -------------- */
+
+    .dl-footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dl-footer-link-list {
+        text-align: center;
+        width: 100%;
+    }
+
+    .dl-footer-link-list>ul {
+        list-style-type: none;
+    }
+
+    .dl-footer-link-list>.dl-h2,
+    .dl-trademark-text,
+    .dl-footer-copywrite-info {
+        text-align: center;
+        width: 100%;
+    }
+
+    .dl-footer-social-list {
+        justify-content: center;
+    }
+
 }
 
 /* Mobile Media Query */
